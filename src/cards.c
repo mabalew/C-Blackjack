@@ -174,72 +174,6 @@ void get_deck(int size, Card card[]) {
 	init_card(&card[49], 49, "A" , black_heart, 10);
 	init_card(&card[50], 50, "A" , black_club, 10);
 	init_card(&card[51], 51, "A" , black_diamond, 10);
-
-	/*card[0] = *black_spade_2;
-	card[1] = *black_heart_2;
-	card[2] = *black_club_2;
-	card[3] = *black_diamond_2;
-
-	card[4] = *black_spade_3;
-	card[5] = *black_heart_3;
-	card[6] = *black_club_3;
-	card[7] = *black_diamond_3;
-
-	card[8] = *black_spade_4;
-	card[9] = *black_heart_4;
-	card[10] = *black_club_4;
-	card[11] = *black_diamond_4;
-
-	card[12] = *black_spade_5;
-	card[13] = *black_heart_5;
-	card[14] = *black_club_5;
-	card[15] = *black_diamond_5;
-
-	card[16] = *black_spade_6;
-	card[17] = *black_heart_6;
-	card[18] = *black_club_6;
-	card[19] = *black_diamond_6;
-
-	card[20] = *black_spade_7;
-	card[21] = *black_heart_7;
-	card[22] = *black_club_7;
-	card[23] = *black_diamond_7;
-
-	card[24] = *black_spade_8;
-	card[25] = *black_heart_8;
-	card[26] = *black_club_8;
-	card[27] = *black_diamond_8;
-
-	card[28] = *black_spade_9;
-	card[29] = *black_heart_9;
-	card[30] = *black_club_9;
-	card[31] = *black_diamond_9;
-
-	card[32] = *black_spade_10;
-	card[33] = *black_heart_10;
-	card[34] = *black_club_10;
-	card[35] = *black_diamond_10;
-
-	card[36] = *black_spade_J;
-	card[37] = *black_heart_J;
-	card[38] = *black_club_J;
-	card[39] = *black_diamond_J;
-
-	card[40] = *black_spade_Q;
-	card[41] = *black_heart_Q;
-	card[42] = *black_club_Q;
-	card[43] = *black_diamond_Q;
-
-	card[44] = *black_spade_K;
-	card[45] = *black_heart_K;
-	card[46] = *black_club_K;
-	card[47] = *black_diamond_K;
-
-	card[48] = *black_spade_A;
-	card[49] = *black_heart_A;
-	card[50] = *black_club_A;
-	card[51] = *black_diamond_A;
-*/
 }
 
 void shuffle(int size, Card card[]) {
@@ -261,7 +195,6 @@ void init_card(Card *card, int id, char *symbol_prefix, char *symbol_suffix, int
 	strcpy(card->symbol, symbol_prefix);
 	strcat(card->symbol, symbol_suffix);
 	card->id = id;
-	//card->symbol = symbol;
 	card->value = value;
 }
 
@@ -279,5 +212,4 @@ void print_deck(int size, Card deck[]) {
 void play() {
 	shuffle(52, deck);
 	//deal();
-
 }
